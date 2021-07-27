@@ -3,7 +3,7 @@
         @csrf
         @method('PUT')
 @else
-    <form method="post" action="{{ route('cliente.store') }}">
+    <form method="post" action="{{ route('pedido.store') }}">
         @csrf
 @endif
     <select name="cliente_id">
