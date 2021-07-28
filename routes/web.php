@@ -55,6 +55,11 @@ Route::middleware('autenticacao')->prefix('/app')->group(function() {
     // Route::resource('pedido_produto', 'PedidoProdutoController');
     Route::get('pedido-produto/create/{pedido}', 'PedidoProdutoController@create')->name('pedido-produto.create');
     Route::post('pedido-produto/store/{pedido}', 'PedidoProdutoController@store')->name('pedido-produto.store');
+<<<<<<< HEAD
+    // Route::delete('pedido-produto.destroy/{pedido}/{produto}', 'PedidoProdutoController@destroy')->name('pedido-produto.destroy');
+    Route::delete('pedido-produto.destroy/{pedidoProduto}/{pedido_id}', 'PedidoProdutoController@destroy')->name('pedido-produto.destroy');
+=======
+>>>>>>> 0e25cbb5097444191008f077a0af117429763bce
 });
 
 Route::get('/teste/{p1}/{p2}', 'TesteController@teste')->name('site.teste');
